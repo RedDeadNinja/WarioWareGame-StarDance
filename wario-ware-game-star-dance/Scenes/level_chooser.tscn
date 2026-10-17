@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://bnb6r7ytcp6ex"]
+
+[ext_resource type="Texture2D" uid="uid://bdsqar3a5v58j" path="res://addons/Background Assets/Background/Background.png" id="1_vsgp5"]
+
+[node name="Level Chooser" type="Node2D" unique_id=2073382661]
+
+[node name="BackGround" type="TextureRect" parent="." unique_id=2076056855]
+offset_right = 1152.0
+offset_bottom = 648.0
+texture = ExtResource("1_vsgp5")
+
+[node name="Tittle" type="RichTextLabel" parent="BackGround" unique_id=1022337324]
+layout_mode = 0
+offset_left = 440.0
+offset_top = 54.0
+offset_right = 697.0
+offset_bottom = 186.0
+theme_override_constants/outline_size = 40
+theme_override_font_sizes/normal_font_size = 90
+text = "Level
+"

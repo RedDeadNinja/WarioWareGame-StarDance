@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://hbadjpdcue5v"]
+
+[ext_resource type="Texture2D" uid="uid://6apom8re7dby" path="res://addons/Folder for new stuff that may be added/Character/Kazuma_Satou/pixalated_KazumaSatou_withoutwhite.png" id="1_rpqav"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_g31fi"]
+
+[node name="Player" type="CharacterBody2D" unique_id=317367140]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1345582281]
+texture_filter = 1
+position = Vector2(7, 0)
+texture = ExtResource("1_rpqav")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1036248797]
+shape = SubResource("CircleShape2D_g31fi")

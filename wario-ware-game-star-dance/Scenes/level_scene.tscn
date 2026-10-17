@@ -1,0 +1,80 @@
+[gd_scene format=3 uid="uid://1077mssjdida"]
+
+[ext_resource type="Script" uid="uid://b04t6lbbeker1" path="res://Scripts/timer_screen.gd" id="1_c7xwe"]
+[ext_resource type="Texture2D" uid="uid://bdsqar3a5v58j" path="res://addons/Background Assets/Background/Background.png" id="2_2fcgv"]
+[ext_resource type="Texture2D" uid="uid://bmggb6x0yg57j" path="res://icon.svg" id="3_qnqh0"]
+
+[node name="level scene" type="Control" unique_id=712224290]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 2.0
+offset_top = 3.0
+offset_right = 2.0
+offset_bottom = 3.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_c7xwe")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=310158134]
+layout_mode = 0
+offset_left = -2.0
+offset_right = 1150.0
+offset_bottom = 648.0
+texture = ExtResource("2_2fcgv")
+
+[node name="HP-Container" type="HBoxContainer" parent="TextureRect" unique_id=1614886226]
+layout_mode = 0
+offset_left = 478.0
+offset_top = 13.0
+offset_right = 1134.0
+offset_bottom = 141.0
+
+[node name="Hp" type="TextureRect" parent="TextureRect/HP-Container" unique_id=498379494]
+layout_mode = 2
+tooltip_text = "Hit Points of the <player>"
+texture = ExtResource("3_qnqh0")
+
+[node name="Hp2" type="TextureRect" parent="TextureRect/HP-Container" unique_id=215007434]
+layout_mode = 2
+tooltip_text = "Hit Points of the <player>"
+texture = ExtResource("3_qnqh0")
+
+[node name="Hp3" type="TextureRect" parent="TextureRect/HP-Container" unique_id=1818329325]
+layout_mode = 2
+tooltip_text = "Hit Points of the <player>"
+texture = ExtResource("3_qnqh0")
+
+[node name="Hp4" type="TextureRect" parent="TextureRect/HP-Container" unique_id=1108519501]
+layout_mode = 2
+tooltip_text = "Hit Points of the <player>"
+texture = ExtResource("3_qnqh0")
+
+[node name="Hp5" type="TextureRect" parent="TextureRect/HP-Container" unique_id=1192142692]
+layout_mode = 2
+tooltip_text = "Hit Points of the <player>"
+texture = ExtResource("3_qnqh0")
+
+[node name="Level" type="RichTextLabel" parent="." unique_id=1126924735]
+layout_mode = 0
+offset_left = 13.0
+offset_top = 20.0
+offset_right = 157.0
+offset_bottom = 70.0
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/normal_font_size = 42
+text = "Level#
+"
+
+[node name="Timer" type="RichTextLabel" parent="." unique_id=587797934]
+layout_mode = 0
+offset_left = 23.0
+offset_top = 94.0
+offset_right = 138.0
+offset_bottom = 148.0
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/normal_font_size = 42
+theme_override_font_sizes/bold_italics_font_size = 39
+text = "0.0
+"
